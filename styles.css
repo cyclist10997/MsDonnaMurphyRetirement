@@ -246,4 +246,17 @@ p {
   .time {
     justify-self: start;
   }
+
+  .map-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.map-wrap {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
 }
