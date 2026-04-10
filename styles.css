@@ -262,8 +262,8 @@ p {
 
 .honoree-photo {
   display: block;
-  width: 220px;
-  max-width: 80%;
+  width: 110px;
+  max-width: 40%;
   height: auto;
   margin: 1.25rem auto;
   border-radius: 12px;
