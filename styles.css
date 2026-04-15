@@ -105,7 +105,8 @@ main {
 
 .card,
 .wide-card,
-.rsvp-card {
+.rsvp-card,
+.visitor-info-card {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -217,37 +218,7 @@ p {
   text-align: center;
 }
 
-.site-footer {
-  padding: 2rem 1rem 3rem;
-  text-align: center;
-}
-
-@media (max-width: 700px) {
-  .hero {
-    min-height: 62vh;
-    padding: 3.5rem 1rem;
-  }
-
-  main {
-    width: min(100% - 1rem, 1100px);
-    margin-top: -2.5rem;
-  }
-
-  .card,
-  .wide-card,
-  .rsvp-card {
-    padding: 1.5rem;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-  }
-
-  .time {
-    justify-self: start;
-  }
-
-  .map-section {
+.map-section {
   padding: 3rem 1.5rem;
   text-align: center;
 }
@@ -262,35 +233,77 @@ p {
 
 .honoree-photo {
   display: block;
-  max-width: 100px;
+  max-width: 180px;
+  width: 100%;
   height: auto;
   margin: 1rem auto;
   border-radius: 12px;
 }
 
+.visitor-info-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-left: 6px solid #c4a000;
+  color: #1f2937;
+}
+
+.visitor-info-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.visitor-info-card p {
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.visitor-info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.visitor-info-card a {
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.site-footer {
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 62vh;
+    padding: 3.5rem 1rem;
+  }
+
+  main {
+    width: min(1100px, calc(100% - 1rem));
+    margin-top: -2.5rem;
+  }
+
+  .card,
+  .wide-card,
+  .rsvp-card,
   .visitor-info-card {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1.5rem 1.75rem;
-    background: rgba(255, 255, 255, 0.92);
-    border-left: 6px solid #c4a000;
-    border-radius: 14px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-    color: #1f2937;
+    padding: 1.5rem;
   }
-  
-  .visitor-info-card h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
+
+  .timeline-item {
+    grid-template-columns: 1fr;
   }
-  
-  .visitor-info-card p {
-    margin-bottom: 1rem;
-    line-height: 1.65;
+
+  .time {
+    justify-self: start;
   }
-  
-  .visitor-info-card a {
-    font-weight: 600;
+
+  .map-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .honoree-photo {
+    max-width: 140px;
   }
 }
