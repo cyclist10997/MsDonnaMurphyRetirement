@@ -267,4 +267,30 @@ p {
   margin: 1rem auto;
   border-radius: 12px;
 }
+
+  .visitor-info-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-left: 6px solid #c4a000;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  color: #1f2937;
+}
+
+.visitor-info-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.visitor-info-card p {
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.visitor-info-card a {
+  font-weight: 600;
+}
 }
