@@ -106,7 +106,8 @@ main {
 .card,
 .wide-card,
 .rsvp-card,
-.visitor-info-card {
+.visitor-info-card,
+.location-text-box {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -116,7 +117,8 @@ main {
 }
 
 .wide-card,
-.rsvp-card {
+.rsvp-card,
+.location-text-box {
   background: var(--panel-strong);
 }
 
@@ -223,6 +225,21 @@ p {
   text-align: center;
 }
 
+.location-text-box {
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  color: #1f2937;
+}
+
+.location-text-box h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.location-text-box p {
+  margin-bottom: 0;
+}
+
 .map-wrap {
   max-width: 900px;
   margin: 1.5rem auto 0;
@@ -287,7 +304,8 @@ p {
   .card,
   .wide-card,
   .rsvp-card,
-  .visitor-info-card {
+  .visitor-info-card,
+  .location-text-box {
     padding: 1.5rem;
   }
 
@@ -306,14 +324,4 @@ p {
   .honoree-photo {
     max-width: 140px;
   }
-
-  .location-text-box {
-  max-width: 900px;
-  margin: 0 auto 1rem;
-  padding: 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-  color: #1f2937;
-}
 }
